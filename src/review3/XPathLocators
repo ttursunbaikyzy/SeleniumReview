@@ -1,0 +1,42 @@
+XPath:
+    Absolute XPath [/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/from/div[1]/div[1]/input]
+
+    Relative XPath
+
+    1. //tagName[@attributeName='value']
+
+    Example:
+    https://selectorshub.com/xpath-practice-page/
+        //input[@id='userId'and @title='Email']
+        //input[@id='userId'or @title='Email']
+        //input[@class='selectors-input jsSelector' and @title='Email']
+
+    2. //tagName[text()='InnerText']
+    //h3[text()='Useful Links for learning']
+
+    3. //tagName[contains(@attribute,'value')]
+        //input[contains(@id,'userId')]
+        //input[contains(@placeholder,'Enter') and @id='userId']
+
+    4. //tagName[contains(text(),'innerText')]
+    //h3[contains(text(),'Useful Links for learning')]
+
+
+    if attribute is unknown, we can use * :
+    //input[@*='userId']
+
+
+    starts with:
+    //a[starts-with(text(),'Amazon')]
+
+
+    indexing:
+    https://naveenautomationlabs.com/opencart/index.php?route=account/login
+    (//input[@class='form-control'])[2]
+
+
+    if have svg, always use Syntax below:
+    //*[local-name()='svg']//*[name()='path']
+
+
+Authentication pop up, when you get prompted to input pop up window when opening a page
